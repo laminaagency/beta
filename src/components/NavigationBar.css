@@ -1,0 +1,84 @@
+/* src/components/Navbar.css */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 2rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid;
+  position: sticky;
+  top: 0;
+}
+
+/* Logo Styles */
+.navbar-logo a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  position: relative;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Custom Underline Effect */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value if needed */
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transition: transform 0.4s ease;
+  transform: scaleX(0); /* Line starts invisible */
+  transform-origin: left; /* Line will grow from the left */
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1); /* Line appears from the left */
+}
+
+/* This is the key change: the transform-origin on the un-hovered state */
+.navbar-links a:not(:hover)::after {
+  transform-origin: right; /* Line will disappear to the right */
+}
+
+/* Contact Button */
+.navbar-button-container a {
+  text-decoration: none;
+}
+
+.navbar-contact-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-contact-button:hover {
+  background-color: #0056b3;
+}
