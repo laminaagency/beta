@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { tokens } from '../assets/styles/tokens.js';
 import ContactButton from './ContactButton.jsx';
+import Logo from '../assets/images/LOGO-Lamina-digital-removebg-preview.png'
 
 const NavContainer = styled.nav`
   display: flex;
@@ -18,11 +19,15 @@ const NavContainer = styled.nav`
 `;
 
 const NavLogo = styled.div`
-  a {
+a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
     font-size: 1.5rem;
+    
+    img {
+      max-width: 500px;
+    }
   }
 `;
 
@@ -72,7 +77,10 @@ const Navbar = () => {
   return (
     <NavContainer>
       <NavLogo>
-        <a href="/">Your Logo</a>
+        <a href="/">
+        {/* <img src={Logo} alt="Company Logo" /> */}
+        Logo
+        </a>
       </NavLogo>
 
       <NavLinks>

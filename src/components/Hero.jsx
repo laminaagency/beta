@@ -70,7 +70,7 @@ const StyledLink = styled.a`
     color: #fff;
     &::before {
       transform: scaleY(1);
-      height: 100%; /* Expands to cover the whole link */
+      height: 80%; /* Expands to cover the whole link */
     }
   }
 `;
@@ -79,7 +79,9 @@ const HeroComponent = () => {
   return (
     <HeroContainer>
       <ContentWrapper>
-        <HeroHeadline>Elevate your <StyledLink href="#">digital</StyledLink> presence. Crafting digital <StyledLink href="#">experiences</StyledLink>.</HeroHeadline>
+        <HeroHeadline>Somos la <StyledLink href="#">estructura</StyledLink>  detrás de tu <StyledLink href="#">presencia</StyledLink> digital.
+        {/* Elevate your <StyledLink href="#">digital</StyledLink> presence. Crafting digital <StyledLink href="#">experiences</StyledLink>. */}
+        </HeroHeadline>
        <ContactButton>Talk to us about organic results</ContactButton>
       </ContentWrapper>
     </HeroContainer>
