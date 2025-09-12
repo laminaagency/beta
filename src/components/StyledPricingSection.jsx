@@ -47,6 +47,7 @@ export const FeatureList = styled.ul`
   padding: 0;
   list-style: none;
   min-height: 220px;
+  margin-bottom: 36px;  
   & li {
     margin-bottom: 7px;
   }
