@@ -10,7 +10,7 @@ const HeroContainer = styled.section`
   width: 100%;
   min-height: 80vh; /* Adjust height as needed */
   // background-color: ${tokens.functional.grey1}; /* A light background for contrast */
-  background-color: #fff;
+  background-color: #F2D8C9;
   padding: 0 5%;
   padding-top: 200px;
 `;
@@ -45,7 +45,7 @@ const LinkWrapper = styled.div`
 const StyledLink = styled.a`
   text-decoration: none;
   // font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bold;
   color: #000;
   padding: 5px 0; /* Add padding to give space for the underline */
   position: relative;

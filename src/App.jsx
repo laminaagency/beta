@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero'
 import Pricing from './components/Pricing'
+import AboutUs from './components/AboutUs'
 import './App.css'; // Optional: if you have global styles
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Header />
       <Hero/>
+      <AboutUs />
       <Pricing />
       {/* You can add more components here */}
       <main>

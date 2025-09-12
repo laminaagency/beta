@@ -8,7 +8,8 @@ const NavContactButton = styled.button`
   position: relative;
   overflow: hidden;
   padding: 0.75rem 1.5rem;
-  background-color: ${tokens.functional.white};
+  // background-color: ${tokens.functional.white};
+  background-color: #F2D8C9;
   color: ${tokens.functional.black};
   border: 1px solid ${tokens.functional.black};
   border-radius: 50px;
