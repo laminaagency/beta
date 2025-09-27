@@ -1,3 +1,5 @@
+/* src/components/AboutUs.css */
+
 .aboutus {
   width: 100%;
   display: flex;
@@ -20,20 +22,106 @@
   height: 100vh;
 }
 
-/* Left and right colored sections */
+/* Hide the mobile title on desktop */
+.mobile-title {
+  display: none;
+}
+
+/* -------------------- Media Queries -------------------- */
+
+@media (max-width: 768px) {
+  .grid-two-col {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .grid-three-col {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .grid-text {
+    padding: 2rem 1rem;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 72px !important;
+  }
+
+  .grid-text h2 {
+    /* Mobile-specific styles for Orígen and Impulso */
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .grid-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .grid-center {
+    padding: 2rem 1rem;
+  }
+
+  .grid-center p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Hide the rotated title on mobile */
+  .rotated-title-container {
+    display: none;
+  }
+
+  .grid-color {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Display and style the mobile title */
+  .mobile-title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .grid-image {
+    height: 60vh;
+  }
+}
+
+/* General styling for the component */
 .grid-color {
   transition: background-color 1s ease;
+  position: relative;
 }
 
-.left-color-blue {
-  background-color: #3b82f6; /* blue */
+.rotated-title-container {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  white-space: nowrap;
 }
 
-.left-color-pink {
-  background-color: #ec4899; /* pink */
+.rotated-title-container h2 {
+  font-size: 72px;
+  font-weight: bold;
 }
 
-/* Center section content */
 .grid-center {
   display: flex;
   flex-direction: column;
@@ -41,22 +129,16 @@
   align-items: center;
   background: #ffffff;
   padding: 3rem;
-  text-align: center;
-}
-
-.grid-center h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .grid-center p {
   font-size: 1.125rem;
   color: #4b5563;
   max-width: 600px;
+  text-align: left;
+  line-height: 2;
 }
 
-/* Square on top-left */
 .grid-square {
   display: flex;
   align-items: center;
@@ -70,15 +152,13 @@
   background: #818cf8;
 }
 
-/* Parallax image sections */
 .grid-image {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Parallax scroll effect */
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-/* Right text block (bottom grid) */
 .grid-text {
   display: flex;
   flex-direction: column;
@@ -86,17 +166,24 @@
   align-items: center;
   background: #eef2ff;
   padding: 3rem;
-  text-align: center;
+  text-align: left;
+  line-height: 2;
+  padding-left: 210px;
 }
 
 .grid-text h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: left;
+  /* Removed padding-left: 200px; */
+  width: 100%;
 }
 
 .grid-text p {
   font-size: 1.125rem;
   color: #374151;
   max-width: 500px;
+  /* Reduced margin-right to align with the rest of the text */
+  margin-right: auto;
 }

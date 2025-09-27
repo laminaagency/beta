@@ -1,0 +1,36 @@
+/* src/components/SectionTitle.css */
+
+.section-title-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title-container h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.section-title-container p {
+  font-size: 2em;
+  color: #555;
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .section-title-container {
+    margin: 70% 0;
+    padding: unset;
+  }
+
+  .section-title-container p {
+    padding: 70% 0;
+    max-width: 80%;
+    text-align: left;
+  }
+}

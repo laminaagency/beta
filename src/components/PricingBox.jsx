@@ -1,20 +1,28 @@
-import React from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { PricingBox, Tag, Price, FeatureList, StyledButton } from './StyledPricingSection';
+// PricingBox.jsx
+import React from "react";
+import { PricingBox, Tag, Price, FeatureList } from "./StyledPricingSection";
+import ContactButton from "./ContactButton";
 
-const PricingBoxComponent = ({ tag, price, features }) => {
+const PricingBoxComponent = ({ tag, price, features, onContactClick }) => {
   return (
     <PricingBox>
-      <Tag>{tag}</Tag>
       <Price>{price}</Price>
+      <Tag>{tag}</Tag>
       <FeatureList>
-        {features.map((feature, index) => (
-          <li key={index}><i className="bi bi-check2"></i> {feature}</li>
+        {features.map((feature, i) => (
+          <li key={i}>{feature}</li>
         ))}
       </FeatureList>
-      <StyledButton href="#">
-        <span>Choose Plan</span>
-      </StyledButton>
+
+      {/* Reuse ContactButton instead of StyledButton */}
+      <ContactButton
+          navState="default"
+          style={{ width: "100%" }}
+          onClick={onContactClick}
+          className="button-lo-quiero"
+      >
+          Lo quiero
+      </ContactButton>
     </PricingBox>
   );
 };

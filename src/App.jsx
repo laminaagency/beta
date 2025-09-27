@@ -1,26 +1,31 @@
 // src/App.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
+import NavigationBAr from './components/NavigationBar'
 import Hero from './components/Hero'
+import WhatWeDo from './components/WhatWeDo';
 import Pricing from './components/Pricing'
 import AboutUs from './components/AboutUs'
+import Contact from './components/Contact'
+import Marquee from './components/Marquee'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 import './App.css'; // Optional: if you have global styles
 
 function App() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   return (
     <div>
-      <Header />
-      <Hero/>
+      <NavigationBAr onContactClick={() => setIsContactOpen(true)}/>
+      <Hero onContactClick={() => setIsContactOpen(true)} />
+      <WhatWeDo />
+      <Pricing  onContactClick={() => setIsContactOpen(true)} />
+      <Marquee />
       <AboutUs />
-      <Pricing />
-      {/* You can add more components here */}
-      <main>
-        <section>
-          <h2>Welcome!</h2>
-          <p>This is the main content of the page.</p>
-        </section>
-      </main>
+      <Projects />
+      <Footer />
+      <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </div>
   );
 }

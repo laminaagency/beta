@@ -1,0 +1,19 @@
+/* src/components/Marquee.css */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  padding: 0.6rem 0;
+}
+
+.marquee__inner {
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.marquee__inner span {
+  white-space: nowrap;
+  /* font-weight: 600; */
+}

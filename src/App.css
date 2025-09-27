@@ -1,4 +1,31 @@
 #root {
-  margin: 0 auto;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden; /* keep safe */
+}
+
+h1  {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, li {
+  font-family: "Roboto", sans-serif;
+}
+
+#contact-button {
+  margin-left: 100px;
+}
+
+.button-lo-quiero {
+  position: relative;
+  top: -72px;
+}
+@media (max-width: 600px){
+  #section-title-first-title {
+    margin: 600px 0;
+  }
 }
