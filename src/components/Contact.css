@@ -6,7 +6,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 1000000;
   background-color: transparent;
 }
 
@@ -29,9 +29,9 @@
 
 .close-button {
   position: absolute;
-  top: 20px;
+  bottom: calc(100vh - 124px);
   right: 20px;
-  border: none;
+  border: 1px solid;
   font-weight: bold;
   cursor: pointer;
   background: none;

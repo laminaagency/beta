@@ -42,7 +42,7 @@ const Pricing = ({ onContactClick }) => {
   return (
     <>
     <SectionTitle text="Cómo?" />
-    <PricingSection>
+    <PricingSection id="pricing">
       <PricingGrid>
         {pricingPlans.map((plan, index) => (
           <PricingBoxComponent 

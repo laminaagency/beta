@@ -58,7 +58,9 @@ const items = [
 export default function WhatWeDo() {
   return (
     <>
-      <SectionTitle id="section-title-first-title" text="Qué?" paragraph="Lámina construye marcas, desarrolla sitios web y genera tráfico mediante la optimización para motores de búsqueda. Para nosotros, lo único que importa es hacer todo esto de forma brillante para que tu negocio destaque y crezca." />
+      <div id="">
+        <SectionTitle id="section-title-first-title" text="Qué?" textId="what-we-do" paragraph="Lámina construye marcas, desarrolla sitios web y genera tráfico mediante la optimización para motores de búsqueda. Para nosotros, lo único que importa es hacer todo esto de forma brillante para que tu negocio destaque y crezca." />
+      </div>
       <section className="whatwedo">
         {items.map((it) => (
           <WhatWeDoItem key={it.number} {...it} />

@@ -51,7 +51,7 @@ export default function AboutUs() {
 
   return (
     <>
-      <SectionTitle text="Quiénes?" />
+      <SectionTitle text="Quiénes?" id="about"/>
       <section className="aboutus">
         {/* Top Grid */}
         <div className="grid-two-col">

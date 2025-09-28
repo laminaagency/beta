@@ -9,9 +9,10 @@ import Logo from "../assets/images/Logo-Lamina.png";
 const FooterContainer = styled.footer`
     background-color:  ${tokens.functional.grey3};
     color: ${tokens.functional.white};
-    padding: 6rem 2rem;
+    padding: 7rem 2rem 0 2rem;
     font-size: 0.95rem;
     line-height: 1.8;
+    margin-top: 288px;
 `;
 
 const ContentGrid = styled.div`
@@ -77,7 +78,6 @@ const ContactInfo = styled.div`
     }
 `;
 
-// 🚀 Reemplazamos el mapa por el logo
 const LogoWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ const LogoWrapper = styled.div`
       height: auto;
       filter: invert(100%) brightness(200%);
       position: relative;
-      top: -134px;
+      top: -98px;
       left: 11px;
     }
 `;
@@ -113,8 +113,8 @@ const Footer = () => {
                 <FooterSection>
                     <h4>Contacto</h4>
                     <ContactInfo>
-                        <p><strong>Email:</strong> info@tuempresa.com</p>
-                        <p><strong>Teléfono:</strong> +54 9 11 XXXX-XXXX</p>
+                        <p><strong>Email:</strong> info@lamina.digital</p>
+                        <p><strong>Teléfono:</strong> +54 9 11 6119-6992</p>
                         <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
                     </ContactInfo>
                     <SocialLinks>
@@ -156,7 +156,7 @@ const Footer = () => {
             </ContentGrid>
             
             <Copyright>
-                &copy; {new Date().getFullYear()} Tu Empresa. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} Lámina Digital. Todos los derechos reservados.
             </Copyright>
         </FooterContainer>
     );

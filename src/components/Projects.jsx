@@ -77,7 +77,7 @@ const Projects = () => {
       url: "https://www.instagram.com/cachicamo.natural/?hl=es-la",
     },
     {
-      title: "ROLA - Diseño y Desarrollo Web + SEO & Growth Campaign",
+      title: "ROLA - Diseño y Desarrollo Web + SEO",
       description: "Creacion de sitio desde cero. Wireframes, perspectiva UX. Curacion y upload de contenido.",
       image: "src/assets/images/rola.png",
       url: "https://rola.la/rola/",
@@ -96,7 +96,7 @@ const Projects = () => {
     },
     {
       title: "Kinemez - Web desde cero",
-      description: "Diseño, creacion y desarrollo web con traducciones al Catalán.",
+      description: "Diseño, creacion y desarrollo web con traducciones al Catalán. Roadmap y sitemap",
       image: "src/assets/images/kinemez.png",
       url: "https://kinemez.com/contacte/?lang=ca",
     },
@@ -115,7 +115,7 @@ const Projects = () => {
 
   return (
     <ProjectsSection>
-      <SectionTitle text="Hicimos" />
+      <SectionTitle text="Hicimos" id="projects" />
 
       <Grid>
         {projects.map((project, index) => (
@@ -126,14 +126,13 @@ const Projects = () => {
               <Description>{project.description}</Description>
               <ContactButton
                 onClick={() => handleProjectClick(project.url)}
-                // Opcional: ajustar estilos para que se vea bien dentro de la card
                 style={{
-                  padding: "0.4rem 0.8rem", // Hacemos el botón más pequeño
-                  fontSize: "0.9rem", // Reducimos la fuente
+                  padding: "0.4rem 0.8rem",
+                  fontSize: "0.9rem",
                   // Aquí puedes pasarle el navState si quieres otro estilo
                 }}
               >
-              Mirar
+              Vamos
               </ContactButton>
             </Content>
           </Card>

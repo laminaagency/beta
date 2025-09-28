@@ -179,20 +179,20 @@ const Navbar = ({ onContactClick }) => {
 
       <NavLinks isMenuOpen={isMenuOpen}>
         <NavLinkItem>
-          <a href="#work">Work</a>
+          <a href="#what-we-do">Que</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#services">Services</a>
+          <a href="#pricing">Como</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#about">About</a>
+          <a href="#about">Quienes</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#podcast">Podcast</a>
+          <a href="#projects">Hicimos</a>
         </NavLinkItem>
         {/* The Contact Button is now inside the mobile menu */}
         <StyledContactButton onClick={onContactClick} isMenuOpen={isMenuOpen}>
-          Contact
+          Contacto
         </StyledContactButton>
       </NavLinks>
 

@@ -51,14 +51,14 @@ export default function Contact({ isOpen, onClose }) {
       <section className="contact-section">
         <div className="contact-form-wrapper">
           <div className="contact-form">
-            <h1>Got questions?</h1>
-            <h2>Feel free to contact us!</h2>
+            <h1>Preguntas?</h1>
+            <h2>Contactanos!</h2>
             <form onSubmit={handleSubmit}>
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" placeholder="Nombre" required />
               <input type="email" name="email" placeholder="Email" required />
-              <textarea name="message" placeholder="Your message" rows="5" required />
+              <textarea name="message" placeholder="Mensaje" rows="5" required />
               <ContactButton type="submit" navState="default">
-                Send
+                Enviar
               </ContactButton>
             </form>
             <p className="status">{status}</p>
