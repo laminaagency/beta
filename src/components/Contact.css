@@ -97,6 +97,7 @@
 .contact-image {
   flex: 1;
   background-image: url('https://static.wixstatic.com/media/9ee1c5_8d7b032035cd4d0faf66add793cb8d59~mv2_d_3430_2287_s_2.jpeg');
+  /* background-image: url('https://picsum.photos/1200/900?random=4'); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

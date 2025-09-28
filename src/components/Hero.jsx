@@ -118,7 +118,7 @@ const HeroComponent = ({ onContactClick }) => {
           Somos la <StyledLink href="#">estructura</StyledLink> detrás de tu <StyledLink href="#">presencia</StyledLink> digital.
         </HeroHeadline>
         <ContactButton onClick={onContactClick}>
-          Talk to us about organic results
+          Habla con nosotros
         </ContactButton>
       </ContentWrapper>
     </HeroContainer>
