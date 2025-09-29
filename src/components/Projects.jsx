@@ -73,37 +73,37 @@ const Projects = () => {
     {
       title: "Cachicamo Natural - Identidad de marca + Web",
       description: "Estrategia de branding desde cero con un sitio moderno y responsivo. Desarrollo de los perfiles en redes sociales.",
-      image: "src/assets/images/cachi-printscreen.png",
+      image: "/cachi-printscreen.png",
       url: "https://www.instagram.com/cachicamo.natural/?hl=es-la",
     },
     {
       title: "ROLA - Diseño y Desarrollo Web + SEO",
       description: "Creacion de sitio desde cero. Wireframes, perspectiva UX. Curacion y upload de contenido.",
-      image: "src/assets/images/rola.png",
+      image: "/rola.png",
       url: "https://rola.la/rola/",
     },
     {
       title: "United Airlines - Campañas de publicacion Web",
       description: "Fuimos parte colaboradora en el equipo de publicaciones, gestion y desarrollo Web entre 2021 - 2025.",
-      image: "src/assets/images/united-airlines-img.png",
+      image: "/united-airlines-img.png",
       url: "https://www.united.com/en/us",
     },
     {
       title: "Cachicamo Natural - Redes Sociales",
       description: "Contenido curado para SEO + Growth Campaign. Gestion de la agenda de publicaciones.",
-      image: "src/assets/images/cachicamo-facebook.png",
+      image: "/cachicamo-facebook.png",
       url: "https://www.facebook.com/cachicamonatural/",
     },
     {
       title: "Kinemez - Web desde cero",
       description: "Diseño, creacion y desarrollo web con traducciones al Catalán. Roadmap y sitemap",
-      image: "src/assets/images/kinemez.png",
+      image: "/kinemez.png",
       url: "https://kinemez.com/contacte/?lang=ca",
     },
         {
       title: "IQVIA Solutions - Design System",
       description: "",
-      image: "src/assets/images/docsite-img.png",
+      image: "/docsite-img.png",
       url: "https://www.iqvia.com/",
     },
   ];
