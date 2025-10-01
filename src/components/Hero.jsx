@@ -9,9 +9,9 @@ const HeroContainer = styled.section`
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 80vh;
+    min-height: 72vh;
     background-color: #F2D8C9;
-    padding: 200px 5%;
+    padding: 144px 5%;
 
     @media (max-width: 1024px) {
         padding: 150px 5%;

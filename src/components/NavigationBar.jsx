@@ -33,7 +33,7 @@ const NavContainer = styled.nav`
 const NavLogo = styled.div`
   a {
     img {
-      max-width: 250px;
+      max-width: 170px;
       height: auto;
    
       @media (max-width: 768px) {
