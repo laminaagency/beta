@@ -2,56 +2,63 @@ import React from 'react';
 import PricingBoxComponent from './PricingBox';
 import { PricingSection, PricingGrid } from './StyledPricingSection';
 import SectionTitle from './SectionTitle';
+import { useTranslation } from 'react-i18next';
 
 const pricingPlans = [
   {
-    tag: 'Creación o mejora de sitios y tiendas',
-    price: 'Web • eCommerce',
+    titleKey: 'pricing.pricing_plan_web_sub_title',
+    priceKey: 'Web • eCommerce', // you didn’t define this, can fallback to hardcoded “Web • eCommerce”
     features: [
-      'Página web hasta 5 secciones + curación de contenido.',
-      'Tienda online hasta 20 productos + medios de pago/envío. Control de stock automatizado',
-      'Mejoras, performance, revamp, actualizaciones.',
-      'Newsletter embebido, sitemaps, banners, optimización móvil.'
+      'pricing.pricing_plan_web_item_1',
+      'pricing.pricing_plan_web_item_2',
+      'pricing.pricing_plan_web_item_3',
+      'pricing.pricing_plan_web_item_4',
     ],
   },
   {
-    tag: 'Presencia activa en redes y campañas de alto impacto',
-    price: 'Social • Contenido',
+    titleKey: 'pricing.pricing_plan_social_sub_title',
+    priceKey: 'pricing.pricing_plan_social_title',
     features: [
-      'Creación de contenido (posts, flyers, stories)',
-      '2 Reels mensuales',
-      'Highlights y portadas de RRSS',
-      'Campañas de lanzamiento/evento (14–30 días, RRSS multiplataforma)',
-      'Soporte en anuncios y agenda de publicaciones'
+      'pricing.pricing_plan_social_item_1',
+      'pricing.pricing_plan_social_item_2',
+      'pricing.pricing_plan_social_item_3',
+      'pricing.pricing_plan_social_item_4',
+      'pricing.pricing_plan_social_item_5',
     ],
   },
   {
-    tag: 'Pensado para quienes buscan potenciar resultados.',
-    price: 'Optimización • Escala',
+    titleKey: 'pricing.pricing_plan_opt_sub_title',
+    priceKey: 'pricing.pricing_plan_opt_title',
     features: [
-      'SEO técnico + velocidad',
-      'Revamp visual de identidad y sitio',
-      'Revisión de catálogo y promociones (para ecommerce)',
-      'Optimización de rendimiento y UX',
-      'Campañas estratégicas con medición de impacto'
+      'pricing.pricing_plan_opt_item_1',
+      'pricing.pricing_plan_opt_item_2',
+      'pricing.pricing_plan_opt_item_3',
+      'pricing.pricing_plan_opt_item_4',
+      'pricing.pricing_plan_opt_item_5',
     ],
   },
 ];
 
 const Pricing = ({ onContactClick }) => {
+  const { t } = useTranslation();
+
   return (
     <>
-    <SectionTitle text="Cómo?" />
-    <PricingSection id="pricing">
-      <PricingGrid>
-        {pricingPlans.map((plan, index) => (
-          <PricingBoxComponent 
-            key={index} 
-            {...plan}  
-            onContactClick={onContactClick}/>
-        ))}
-      </PricingGrid>
-    </PricingSection>
+      <SectionTitle text={t('navbar.nav_item_how_def')} textId="pricing" id="pricing"/>
+      <PricingSection>
+        <PricingGrid>
+          {pricingPlans.map((plan, index) => (
+            <PricingBoxComponent
+              key={index}
+              tag={t(plan.titleKey)}
+              price={t(plan.priceKey)}
+              features={plan.features.map((f) => t(f))}
+              buttonLabel={t('pricing.pricing_plan_btn')}
+              onContactClick={onContactClick}
+            />
+          ))}
+        </PricingGrid>
+      </PricingSection>
     </>
   );
 };

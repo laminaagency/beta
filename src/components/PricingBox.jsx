@@ -2,8 +2,10 @@
 import React from "react";
 import { PricingBox, Tag, Price, FeatureList } from "./StyledPricingSection";
 import ContactButton from "./ContactButton";
+import { useTranslation } from 'react-i18next';
 
 const PricingBoxComponent = ({ tag, price, features, onContactClick }) => {
+  const { t } = useTranslation();
   return (
     <PricingBox>
       <Price>{price}</Price>
@@ -21,7 +23,7 @@ const PricingBoxComponent = ({ tag, price, features, onContactClick }) => {
           onClick={onContactClick}
           className="button-lo-quiero"
       >
-          Lo quiero
+          {t('pricing.pricing_plan_btn')}
       </ContactButton>
     </PricingBox>
   );

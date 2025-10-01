@@ -24,8 +24,48 @@ p, li {
   position: relative;
   top: -72px;
 }
+
+.button-lo-quiero button {
+  border: 1px solid;
+}
+
 @media (max-width: 600px){
   #section-title-first-title {
     margin: 600px 0;
   }
+
+  .lang-switch.lang-switch button  {
+    top: unset;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .lang-switch.lang-switch button  {
+    top: unset;
+  }
+}
+
+.lang-switch button {
+  background-color: unset;
+  border: unset;
+  position: relative;
+  top: -56px;
+  font-size: 14px;
+  transition: transform ease-in-out 100ms;
+}
+
+.lang-switch button:hover {
+  border: unset;
+  border-color: unset;
+  transform: scale(1.1);
+}
+
+.lang-switch button:focus {
+  border: unset;
+  border-color: unset;
+  outline: unset;
+}
+
+.nav-contact-btn button {
+  border: 1px solid;
 }

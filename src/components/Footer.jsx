@@ -1,9 +1,10 @@
 // Footer.jsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { tokens } from '../assets/styles/tokens.js';
-import Logo from "../assets/images/Logo-Lamina.png";
+import Logo from "../assets/images/logo-bold-nobg.png";
 
 
 const FooterContainer = styled.footer`
@@ -90,9 +91,6 @@ const LogoWrapper = styled.div`
       max-width: 600px;
       height: auto;
       filter: invert(100%) brightness(200%);
-      position: relative;
-      top: -98px;
-      left: 11px;
     }
 `;
 
@@ -106,16 +104,17 @@ const Copyright = styled.div`
 `;
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <FooterContainer>
             <ContentGrid>
                 {/* Columna 1: Contacto */}
                 <FooterSection>
-                    <h4>Contacto</h4>
+                    <h4>{t('footer.footer_footer_section_1')}</h4>
                     <ContactInfo>
                         <p><strong>Email:</strong> info@lamina.digital</p>
-                        <p><strong>Teléfono:</strong> +54 9 11 6119-6992</p>
-                        <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+                        <p><strong>{t('footer.footer_contact_info_phone')}:</strong> +54 9 11 6119-6992</p>
+                        <p><strong>{t('footer.footer_contact_location')}:</strong> Buenos Aires, Argentina</p>
                     </ContactInfo>
                     <SocialLinks>
                         <a href="URL_FACEBOOK" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
@@ -126,24 +125,24 @@ const Footer = () => {
 
                 {/* Columna 2: Enlaces */}
                 <FooterSection>
-                    <h4>Explora</h4>
+                    <h4>{t('footer.footer_footer_section_2_title')}</h4>
                     <LinkList>
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#home">{t('footer.footer_footer_section_2_item-1')}</a></li>
+                        <li><a href="#servicios">{t('footer.footer_footer_section_2_item-2')}</a></li>
+                        <li><a href="#proyectos">{t('footer.footer_footer_section_2_item-3')}</a></li>
+                        <li><a href="#contacto">{t('footer.footer_footer_section_2_item-4')}</a></li>
+                        <li><a href="#planes">{t('footer.footer_footer_section_2_item-5')}</a></li>
                     </LinkList>
                 </FooterSection>
 
                 {/* Columna 3: Servicios */}
                 <FooterSection>
-                    <h4>Nuestros Servicios</h4>
+                    <h4>{t('footer.footer_footer_section_3_title')}</h4>
                     <LinkList>
-                        <li><a href="#web">Web & eCommerce</a></li>
-                        <li><a href="#social">Social & Contenido</a></li>
-                        <li><a href="#seo">Optimización & SEO</a></li>
-                        <li><a href="#auditoria">Auditoría Gratuita</a></li>
+                        <li><a href="#web">{t('footer.footer_footer_section_3_item-1')}</a></li>
+                        <li><a href="#social">{t('footer.footer_footer_section_3_item-2')}</a></li>
+                        <li><a href="#seo">{t('footer.footer_footer_section_3_item-3')}</a></li>
+                        <li><a href="#auditoria">{t('footer.footer_footer_section_3_item-4')}</a></li>
                     </LinkList>
                 </FooterSection>
 
@@ -156,7 +155,7 @@ const Footer = () => {
             </ContentGrid>
             
             <Copyright>
-                &copy; {new Date().getFullYear()} Lámina Digital. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} Lámina Digital. {t('footer.footer_copyright')}
             </Copyright>
         </FooterContainer>
     );

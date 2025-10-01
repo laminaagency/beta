@@ -1,9 +1,10 @@
 import React from 'react';
 import './WhatWeDo.css';
 import SectionTitle from "./SectionTitle";
+import { useTranslation } from 'react-i18next';
 
-
-export const WhatWeDoItem = ({ number, title, paragraph }) => {
+export const WhatWeDoItem = ({ number, titleKey, paragraphKey }) => {
+  const { t } = useTranslation();
   return (
     <article className="whatwedo-item">
       <div className="whatwedo-inner">
@@ -12,8 +13,8 @@ export const WhatWeDoItem = ({ number, title, paragraph }) => {
         </div>
 
         <div className="whatwedo-right">
-          <h2 className="whatwedo-title">{title}</h2>
-          {paragraph && <p className="whatwedo-paragraph">{paragraph}</p>}
+          <h2 className="whatwedo-title">{t(titleKey)}</h2>
+          {paragraphKey && <p className="whatwedo-paragraph">{t(paragraphKey)}</p>}
         </div>
       </div>
       <div className="whatwedo-divider" />
@@ -21,45 +22,46 @@ export const WhatWeDoItem = ({ number, title, paragraph }) => {
   );
 };
 
-
 const items = [
   {
     number: '01',
-    title: 'Ideas en acción. Impacto real.',
-    paragraph:
-      'Creamos marcas sólidas, sitios efectivos y estrategias digitales que generan efecto tangible para tu marca.',
+    titleKey: 'what_section.what_01_title',
+    paragraphKey: 'what_section.what_01_phrase',
   },
   {
     number: '02',
-    title: 'Juntos es mejor. Con más foco se alcanzan objetivos.',
-    paragraph:
-      'No trabajamos en soledad: trabajamos con vos. Las mejores ideas nacen de la colaboración y la transparencia.',
+    titleKey: 'what_section.what_02_title',
+    paragraphKey: 'what_section.what_02_phrase',
   },
   {
     number: '03',
-    title: 'Verdad sin filtros. Ideas claras que rompen la zona de confort.',
-    paragraph:
-      'Te decimos lo que pensamos, incluso si desafía lo que hacías antes. Porque innovar exige cuestionar.',
+    titleKey: 'what_section.what_03_title',
+    paragraphKey: 'what_section.what_03_phrase',
   },
   {
     number: '04',
-    title: 'Críticas que suman. Con cada paso elevamos proyectos.',
-    paragraph:
-      'Nos nutren tus comentarios y hasta tus críticas: cada intercambio nos acerca a un trabajo mejor.',
+    titleKey: 'what_section.what_04_title',
+    paragraphKey: 'what_section.what_04_phrase',
   },
   {
     number: '05',
-    title: 'Tu potencial, ahora. Un viaje hacia lo que tu marca puede lograr.',
-    paragraph:
-      'Hacé equipo con nosotros y empezá a liberar el verdadero potencial de tu negocio.',
+    titleKey: 'what_section.what_05_title',
+    paragraphKey: 'what_section.what_05_phrase',
   },
 ];
 
 export default function WhatWeDo() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id="">
-        <SectionTitle id="section-title-first-title" text="Qué?" textId="what-we-do" paragraph="Lámina construye marcas, desarrolla sitios web y genera tráfico mediante la optimización para motores de búsqueda. Para nosotros, lo único que importa es hacer todo esto de forma brillante para que tu negocio destaque y crezca." />
+        <SectionTitle
+          id="section-title-first-title"
+          text={t('navbar.nav_item_what_def')}
+          textId="what-we-do"
+          paragraph={t('what_section.what_phrase_main')}
+        />
       </div>
       <section className="whatwedo">
         {items.map((it) => (

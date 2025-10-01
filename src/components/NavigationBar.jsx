@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { tokens } from "../assets/styles/tokens.js";
 import ContactButton from "./ContactButton.jsx";
-import Logo from "../assets/images/Logo-Lamina.png";
+import Logo from "../assets/images/logo-bold-nobg.png";
+import { useTranslation } from 'react-i18next';
+
 
 // Main container for the navbar
 const NavContainer = styled.nav`
@@ -33,8 +35,7 @@ const NavLogo = styled.div`
     img {
       max-width: 250px;
       height: auto;
-      position: absolute;
-      top: -16px;
+   
       @media (max-width: 768px) {
         max-width: 120px;
       }
@@ -145,6 +146,12 @@ const Navbar = ({ onContactClick }) => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const { t, i18n } = useTranslation();
+    // Function to switch language (optional, but useful!)
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -179,20 +186,20 @@ const Navbar = ({ onContactClick }) => {
 
       <NavLinks isMenuOpen={isMenuOpen}>
         <NavLinkItem>
-          <a href="#what-we-do">Que</a>
+          <a href="#what-we-do">{t('navbar.nav_item_what_def')}</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#pricing">Como</a>
+          <a href="#pricing">{t('navbar.nav_item_how_def')}</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#about">Quienes</a>
+          <a href="#about">{t('navbar.nav_item_who_def')}</a>
         </NavLinkItem>
         <NavLinkItem>
-          <a href="#projects">Hicimos</a>
+          <a href="#projects">{t('navbar.nav_item_projects')}</a>
         </NavLinkItem>
         {/* The Contact Button is now inside the mobile menu */}
-        <StyledContactButton onClick={onContactClick} isMenuOpen={isMenuOpen}>
-          Contacto
+        <StyledContactButton className="nav-contact-btn" onClick={onContactClick} isMenuOpen={isMenuOpen}>
+          {t('navbar.nav_contact_btn')}
         </StyledContactButton>
       </NavLinks>
 
@@ -201,6 +208,10 @@ const Navbar = ({ onContactClick }) => {
         <Bar isMenuOpen={isMenuOpen} />
         <Bar isMenuOpen={isMenuOpen} />
       </Hamburger>
+      <div className="lang-switch">
+        <button onClick={() => changeLanguage('en')}>EN</button>
+        <button onClick={() => changeLanguage('es')}>ES</button>
+      </div>
     </NavContainer>
   );
 };

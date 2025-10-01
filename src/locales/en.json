@@ -1,0 +1,97 @@
+{
+  "navbar": {
+    "nav_item_what_def": "What",
+    "nav_item_how_def": "How",
+    "nav_item_who_def": "Who",
+    "nav_item_projects": "Projects",
+    "nav_contact_btn": "Contact"
+  },
+  "hero": {
+    "hero_phrase_1": "We are the ",
+    "hero_phrase_styled_link_1": "structure",
+    "hero_phrase_2": "behind your digital ",
+    "hero_phrase_styled_link_2": "presence.",
+    "hero_btn": "Talk to us"
+  },
+  "what_section": {
+    "what_phrase_main": "Lamina build brands, develop websites and generates traffic through search engine optimization. For us, the only thing that matters is to doing all this in a brilliantly so your business stands out and grows.",
+    "what_01_title": "Ideas in action. Real impact.",
+    "what_01_phrase": "We create strong brands, effective websites, and digital strategies that generate tangible results for your brand.",
+    "what_02_title": "Together is better. With more focus, goals are achieved.",
+    "what_02_phrase": "We don't work alone: we work with you. The best ideas come from collaboration and transparency.",
+    "what_03_title": "Unfiltered truth. Clear ideas that break out of your comfort zone.",
+    "what_03_phrase": "We tell you what we think, even if it challenges what you did before. Because innovation requires questioning.",
+    "what_04_title": "Criticism that adds up. With each step, we elevate projects.",
+    "what_04_phrase": "We welcome your comments and even your criticism: every exchange brings us closer to better work.",
+    "what_05_title": "Your potential, now. A journey toward what your brand can achieve.",
+    "what_05_phrase": "Team up with us and start unlocking the true potential of your business."
+  },
+  "pricing": {
+    "pricing_plan_web_sub_title": "Creation or improvement of websites and stores",
+    "pricing_plan_web_item_1": "Website with up to 5 sections + content curation.",
+    "pricing_plan_web_item_2": "Online store for up to 20 products + payment/shipping methods. Automated stock control.",
+    "pricing_plan_web_item_3": "Upgrades, performance, revamp, updates.",
+    "pricing_plan_web_item_4": "Embedded newsletter, sitemaps, banners, mobile optimization.",
+    "pricing_plan_social_title": "Social • Content",
+    "pricing_plan_social_sub_title": "Active presence on social media and high-impact campaigns",
+    "pricing_plan_social_item_1": "Content creation (posts, flyers, stories)",
+    "pricing_plan_social_item_2": "2 Monthly reels",
+    "pricing_plan_social_item_3": "Social media highlights and covers",
+    "pricing_plan_social_item_4": "Launch/event campaigns (14–30 days, multi-platform social media)",
+    "pricing_plan_social_item_5": "Support for advertisements and publication schedule",
+    "pricing_plan_opt_title": "Optimization • Scale",
+    "pricing_plan_opt_sub_title": "Designed for those looking to boost results.",
+    "pricing_plan_opt_item_1": "Technical SEO + speed",
+    "pricing_plan_opt_item_2": "Visual revamp of identity and website",
+    "pricing_plan_opt_item_3": "Review of catalog and promotions (for e-commerce)",
+    "pricing_plan_opt_item_4": "Performance and UX optimization",
+    "pricing_plan_opt_item_5": "Strategic campaigns with impact measurement",
+    "pricing_plan_btn": "I want it",
+    "pricing_marquee_content": "We offer",
+    "pricing_marquee_strong_1": "FREE consulting: ",
+    "pricing_marquee_content_1": "Visual, content, and UX analysis. ",
+    "pricing_marquee_strong_2": "No charge! ",
+    "pricing_marquee_content_3": "We analyze, report, and make recommendations at no cost!"
+  },
+  "who": {
+    "who_upper_grid_title": "Origin",
+    "who_upper_grid_content": "Lámina Digital was born out of a friendship that has been with us since the beginning. We are three lifelong friends who, after pursuing different career paths, decided to join forces to realize a shared dream: to create a digital marketing agency that is different, human, and comprehensive. What began as a collective dream is now a passionate team that grows by helping others grow.",
+    "who_middle_grid_title": "Us",
+    "who_middle_grid_content": "Each one brings a unique background that shapes Lámina Digital's identity: Facundo, a systems engineer and web developer, provides the technical vision and solidity to create secure and scalable platforms that enhance brands' online presence. Fernanda, a graphic designer who graduated from the University of Buenos Aires, combines creativity and strategy to bring clear and memorable visual identities to life. Ezequiel, illustrator, creative. With his artistic eye and experience in visual communication, he brings rhythm, color, and emotion to digital content, making each project stand out and be remembered.",
+    "who_bottom_grid_title": "Pulse",
+    "who_bottom_grid_content": "Each project is an opportunity for us to innovate, to accompany brands in their growth, and to demonstrate that digital marketing can be as human as it is strategic. What began as a dream among friends is now a solid, passionate team committed to making every idea a reality."
+  },
+  "projects": {
+    "project_01_title": "Cachicamo Natural - Brand identity + Website",
+    "project_01_description": "Branding strategy from scratch with a modern, responsive website. Development of social media profiles.",
+    "project_02_title": "ROLA - Web Design and Development + SEO",
+    "project_02_description": "Website creation from scratch. Wireframes, UX perspective. Content curation and upload.",
+    "project_03_title": "",
+    "project_03_description": "",
+    "project_04_title": "Cachicamo Natural - Social Media",
+    "project_04_description": "Curated content for SEO + Growth Campaign. Management of the publication schedule.",
+    "project_05_title": "Kinemez - Website from scratch",
+    "project_05_description": "Web design, creation, and development with translations into Catalan. Roadmap and sitemap.",
+    "project_06_title": "IQVIA Solutions - Design System",
+    "project_06_description":"",
+    "projects_btn": "Let's go!"
+  },
+  "footer": {
+    "footer_footer_section_1": "Contact",
+    "footer_contact_info_phone": "Phone",
+    "footer_contact_location": "Location",
+    "footer_footer_section_2_title": "Explore",
+    "footer_footer_section_2_item-1": "Home",
+    "footer_footer_section_2_item-2": "Services",
+    "footer_footer_section_2_item-3": "Projects",
+    "footer_footer_section_2_item-4": "Contact",
+    "footer_footer_section_2_item-5": "Plans",
+    "footer_footer_section_3_title": "Our Services",
+    "footer_footer_section_3_item-1": "Web & eCommerce",
+    "footer_footer_section_3_item-2": "Social & Content",
+    "footer_footer_section_3_item-3": "Optimization & SEO",
+    "footer_footer_section_3_item-4": "Free Audit",
+    "footer_copyright": "All right reserved"
+  }
+
+}

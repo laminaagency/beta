@@ -14,20 +14,20 @@ import Footer from './components/Footer'
 import './App.css'; // Optional: if you have global styles
 
 function App() {
-  const [isContactOpen, setIsContactOpen] = useState(false);
-  return (
-    <div>
-      <NavigationBAr onContactClick={() => setIsContactOpen(true)}/>
-      <Hero onContactClick={() => setIsContactOpen(true)} />
-      <WhatWeDo />
-      <Pricing  onContactClick={() => setIsContactOpen(true)} />
-      <Marquee />
-      <AboutUs />
-      <Projects />
-      <Footer />
-      <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
-    </div>
-  );
+    const [isContactOpen, setIsContactOpen] = useState(false);
+    return (
+        <div>
+            <NavigationBAr onContactClick={() => setIsContactOpen(true)}/>
+            <Hero />
+            <WhatWeDo />
+            <Pricing onContactClick={() => setIsContactOpen(true)} />
+            <Marquee />
+            <AboutUs />
+            <Projects />
+            <Footer />
+            <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+        </div>
+    );
 }
 
 export default App;
