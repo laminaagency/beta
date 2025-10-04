@@ -18,7 +18,7 @@ export const PricingSection = styled.section`
 export const PricingGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 86px;
+  gap: 42px;
   align-items: stretch; // This ensures all items in the grid have the same height
   margin-bottom: 144px;
 `;

@@ -17,11 +17,11 @@
     "hero_btn": "Habla con nosotros"
   },
   "what_section": {
-    "what_phrase_main": "Lámina construye marcas, desarrolla sitios web y genera tráfico mediante la optimización para motores de búsqueda. Para nosotros, lo único que importa es hacer todo esto de forma brillante para que tu negocio destaque y crezca.",
+    "what_phrase_main": "Lámina construye marcas, desarrolla sitios web y genera tráfico mediante la optimización para motores de búsqueda. Además, incorporamos herramientas de inteligencia artificial de forma estratégica para potenciar resultados. Para nosotros, lo único que importa es hacer todo esto de forma brillante para que tu negocio destaque y crezca.",
     "what_01_title": "Ideas en acción. Impacto real.",
     "what_01_phrase": "Creamos marcas sólidas, sitios efectivos y estrategias digitales que generan efecto tangible para tu marca.",
     "what_02_title": "Juntos es mejor. Con más foco se alcanzan objetivos.",
-    "what_02_phrase": "No trabajamos en soledad: trabajamos con vos. Las mejores ideas nacen de la colaboración y la transparencia.",
+    "what_02_phrase": "No trabajamos en soledad: trabajamos con vos. Las mejores ideas nacen de la colaboración, la transparencia y, cuando es útil, del apoyo de herramientas inteligentes que optimizan el proceso.",
     "what_03_title": "Verdad sin filtros. Ideas claras que rompen la zona de confort.",
     "what_03_phrase": "Te decimos lo que pensamos, incluso si desafía lo que hacías antes. Porque innovar exige cuestionar.",
     "what_04_title": "Críticas que suman. Con cada paso elevamos proyectos.",
@@ -30,25 +30,25 @@
     "what_05_phrase": "Hacé equipo con nosotros y empezá a liberar el verdadero potencial de tu negocio."
   },
   "pricing": {
-    "pricing_plan_web_sub_title": "Creación o mejora de sitios y tiendas",
-    "pricing_plan_web_item_1": "Página web hasta 5 secciones + curación de contenido.",
-    "pricing_plan_web_item_2": "Tienda online hasta 20 productos + medios de pago/envío. Control de stock automatizado.",
-    "pricing_plan_web_item_3": "Mejoras, performance, revamp, actualizaciones.",
-    "pricing_plan_web_item_4": "Newsletter embebido, sitemaps, banners, optimización móvil.",
+    "pricing_plan_web_sub_title": "Creación o mejora de sitios y tiendas (con integración de IA opcional)",
+    "pricing_plan_web_item_1": "Página web hasta 5 secciones + curación de contenido (optimización con IA cuando aplica).",
+    "pricing_plan_web_item_2": "Tienda online hasta 20 productos + medios de pago/envío. Control de stock automatizado con posibilidad de recomendaciones inteligentes.",
+    "pricing_plan_web_item_3": "Mejoras, performance, revamp, actualizaciones, con análisis apoyado en IA.",
+    "pricing_plan_web_item_4": "Newsletter embebido, sitemaps, banners, optimización móvil. Integración de asistentes virtuales opcional.",
     "pricing_plan_social_title": "Social • Contenido",
-    "pricing_plan_social_sub_title": "Presencia activa en redes y campañas de alto impacto",
-    "pricing_plan_social_item_1": "Creación de contenido (posts, flyers, stories)",
+    "pricing_plan_social_sub_title": "Presencia activa en redes y campañas de alto impacto (potenciadas con IA)",
+    "pricing_plan_social_item_1": "Creación de contenido (posts, flyers, stories) asistida por IA creativa.",
     "pricing_plan_social_item_2": "2 Reels mensuales",
     "pricing_plan_social_item_3": "Highlights y portadas de RRSS",
-    "pricing_plan_social_item_4": "Campañas de lanzamiento/evento (14–30 días, RRSS multiplataforma)",
+    "pricing_plan_social_item_4": "Campañas de lanzamiento/evento (14–30 días, RRSS multiplataforma) optimizadas con análisis de IA.",
     "pricing_plan_social_item_5": "Soporte en anuncios y agenda de publicaciones",
     "pricing_plan_opt_title": "Optimización • Escala",
-    "pricing_plan_opt_sub_title": "Pensado para quienes buscan potenciar resultados.",
-    "pricing_plan_opt_item_1": "SEO técnico + velocidad",
+    "pricing_plan_opt_sub_title": "Pensado para quienes buscan potenciar resultados con insights de IA.",
+    "pricing_plan_opt_item_1": "SEO técnico + velocidad, con análisis predictivo de IA.",
     "pricing_plan_opt_item_2": "Revamp visual de identidad y sitio",
     "pricing_plan_opt_item_3": "Revisión de catálogo y promociones (para ecommerce)",
-    "pricing_plan_opt_item_4": "Optimización de rendimiento y UX",
-    "pricing_plan_opt_item_5": "Campañas estratégicas con medición de impacto",
+    "pricing_plan_opt_item_4": "Optimización de rendimiento y UX apoyada en IA.",
+    "pricing_plan_opt_item_5": "Campañas estratégicas con medición de impacto y datos enriquecidos con IA.",
     "pricing_plan_btn": "Lo quiero",
     "pricing_marquee_content": "Consultoría",
     "pricing_marquee_strong_1": "GRATIS :",
@@ -58,11 +58,11 @@
   },
   "who": {
     "who_upper_grid_title": "Orígen",
-    "who_upper_grid_content": "Lámina Digital nació de una amistad que nos acompaña desde siempre. Somos tres amigos de toda la vida que, después de recorrer distintos caminos profesionales, decidimos unir fuerzas para dar forma a un sueño compartido: crear una agencia de marketing digital distinta, humana y con una mirada integral. Lo que comenzó como un sueño colectivo hoy es un equipo apasionado que crece ayudando a otros a crecer.",
+    "who_upper_grid_content": "Lámina Digital nació de una amistad que nos acompaña desde siempre. Somos tres amigos de toda la vida que, después de recorrer distintos caminos profesionales, decidimos unir fuerzas para dar forma a un sueño compartido: crear una agencia de marketing digital distinta, humana y con una mirada integral. Lo que comenzó como un sueño colectivo hoy es un equipo apasionado que crece ayudando a otros a crecer. Hoy, además de esa base, sumamos inteligencia artificial como aliada para llevar las ideas más lejos.",
     "who_middle_grid_title": "Nosotros",
-    "who_middle_grid_content": "Cada uno trae un recorrido único que le da forma a la identidad de Lámina Digital: Facundo, ingeniero en sistemas y desarrollador web, aporta la visión técnica y la solidez para crear plataformas seguras y escalables que potencian la presencia online de las marcas. Fernanda, diseñadora gráfica egresada de la UBA, une creatividad y estrategia para dar vida a identidades visuales claras y memorables. Ezequiel, ilustrador, creativo. Con su mirada artística y experiencia en comunicacion visual, aporta ritmo, color y emoción a los contenidos digitales, haciendo que cada proyecto destaque y se recuerde.",
+    "who_middle_grid_content": "Cada uno trae un recorrido único que le da forma a la identidad de Lámina Digital: Facundo, ingeniero en sistemas y desarrollador web, aporta la visión técnica y la solidez para crear plataformas seguras y escalables que potencian la presencia online de las marcas. Fernanda, diseñadora gráfica egresada de la UBA, une creatividad y estrategia para dar vida a identidades visuales claras y memorables. Ezequiel, ilustrador, creativo. Con su mirada artística y experiencia en comunicacion visual, aporta ritmo, color y emoción a los contenidos digitales, haciendo que cada proyecto destaque y se recuerde. En conjunto, potenciamos todo esto con el uso responsable de IA generativa, que nos permite acelerar procesos y ofrecer soluciones innovadoras.",
     "who_bottom_grid_title": "Pulso",
-    "who_bottom_grid_content": "Cada proyecto es para nosotros una oportunidad de innovar, de acompañar a las marcas en su crecimiento y de demostrar que el marketing digital puede ser tan humano como estratégico. Lo que comenzó como un sueño entre amigos hoy es un equipo sólido, apasionado y comprometido con hacer que cada idea se convierta en realidad."
+    "who_bottom_grid_content": "Cada proyecto es para nosotros una oportunidad de innovar, de acompañar a las marcas en su crecimiento y de demostrar que el marketing digital puede ser tan humano como estratégico. Lo que comenzó como un sueño entre amigos hoy es un equipo sólido, apasionado y comprometido con hacer que cada idea se convierta en realidad. Ahora con un nuevo aliado: la inteligencia artificial."
   },
   "projects": {
     "project_01_title": "Cachicamo Natural - Identidad de marca + Web",
@@ -76,7 +76,7 @@
     "project_05_title": "Kinemez - Web desde cero",
     "project_05_description": "Diseño, creacion y desarrollo web con traducciones al Catalán. Roadmap y sitemap.",
     "project_06_title": "IQVIA Solutions - Design System",
-    "project_06_description":"",
+    "project_06_description": "",
     "projects_btn": "Vamos"
   },
   "footer": {
@@ -96,5 +96,4 @@
     "footer_footer_section_3_item-4": "Auditoría Gratuita",
     "footer_copyright": "Todos los derechos reservados."
   }
-
 }
