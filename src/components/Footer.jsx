@@ -118,8 +118,8 @@ const Footer = () => {
                     </ContactInfo>
                     <SocialLinks>
                         <a href="URL_FACEBOOK" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-                        <a href="URL_INSTAGRAM" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-                        <a href="URL_LINKEDIN" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                        <a href="https://www.instagram.com/laminadig/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="http://www.linkedin.com/in/lamina-digital" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                     </SocialLinks>
                 </FooterSection>
 
