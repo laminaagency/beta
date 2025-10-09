@@ -113,7 +113,7 @@ const Footer = () => {
                     <h4>{t('footer.footer_footer_section_1')}</h4>
                     <ContactInfo>
                         <p><strong>Email:</strong> info@lamina.digital</p>
-                        <p><strong>{t('footer.footer_contact_info_phone')}:</strong> +54 9 11 6119-6992</p>
+                        <p><strong>{t('footer.footer_contact_info_phone')}:</strong> +54 9 11 6575-8962</p>
                         <p><strong>{t('footer.footer_contact_location')}:</strong> Buenos Aires, Argentina</p>
                     </ContactInfo>
                     <SocialLinks>

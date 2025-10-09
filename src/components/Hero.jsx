@@ -112,7 +112,7 @@ const StyledLink = styled.a`
 `;
 
 const HeroComponent = () => {
-    const whatsappLink = "https://wa.me/5491161196992?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios."; 
+    const whatsappLink = "https://wa.me/5491165758962?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios."; 
     const { t } = useTranslation();
     return (
         <HeroContainer>
