@@ -9,8 +9,10 @@ import Pricing from './components/Pricing'
 import AboutUs from './components/AboutUs'
 import Contact from './components/Contact'
 import Marquee from './components/Marquee'
+import CalendlyEmbed from './components/CalendlyEmbed'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import ScrollToTopButton from './components/ScrollToTopButton'
 import './App.css'; // Optional: if you have global styles
 
 function App() {
@@ -22,9 +24,11 @@ function App() {
             <WhatWeDo />
             <Pricing onContactClick={() => setIsContactOpen(true)} />
             <Marquee />
+            <CalendlyEmbed />
             <AboutUs />
             <Projects />
             <Footer />
+            <ScrollToTopButton />
             <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
         </div>
     );

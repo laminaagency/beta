@@ -106,7 +106,7 @@ const Copyright = styled.div`
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <FooterContainer>
+        <FooterContainer id="footer">
             <ContentGrid>
                 {/* Columna 1: Contacto */}
                 <FooterSection>
